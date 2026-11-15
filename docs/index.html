@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Git and GitHub in VS Code · EPSS group tutorial</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="bar">
+      <span class="brand">Git + GitHub in VS Code</span>
+      <div class="roles" role="group" aria-label="Your role">
+        <span class="label">I am</span>
+        <button type="button" data-role="A" aria-pressed="false">A</button>
+        <button type="button" data-role="B" aria-pressed="false">B</button>
+        <button type="button" data-role="C" aria-pressed="false">C</button>
+      </div>
+      <div class="meter" title="Steps you have ticked">
+        <div class="track"><div class="fill" id="fill"></div></div>
+        <span id="count">0 / 0</span>
+      </div>
+    </div>
+    <nav id="nav" aria-label="Parts"></nav>
+  </header>
+
+  <main>
+    <section class="panel" id="panel" aria-labelledby="panel-title">
+      <div class="panel-head">
+        <h2 id="panel-title">Group checkpoints</h2>
+        <span class="source" id="source"></span>
+        <button type="button" id="check-now" hidden>Check now</button>
+      </div>
+      <p class="hint" id="panel-hint"></p>
+      <ol class="cps" id="cps"></ol>
+      <ul class="problems" id="problems" hidden></ul>
+      <dl class="local" id="local" hidden></dl>
+      <form class="repo" id="repo-form">
+        <label for="repo">Your group's repository</label>
+        <input id="repo" name="repo" placeholder="https://github.com/owner/epss-git-tutorial-g07" autocomplete="off" spellcheck="false">
+        <button type="submit">Save</button>
+      </form>
+      <p class="fine">Ticks are yours: they stay in this browser. Checkpoints are the group's: they are verified on the repository itself.
+        <button type="button" class="link" id="reset">Reset my ticks</button></p>
+    </section>
+
+    <div id="guide"><p class="loading">Loading the guide…</p></div>
+  </main>
+
+  <script src="assets/marked.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

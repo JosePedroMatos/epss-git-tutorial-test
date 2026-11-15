@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# files the code produces: they can always be made again
+outputs/
+
+# personal editor settings (tasks.json and extensions.json are shared)
+.vscode/settings.json
+
+# secrets never go into a repository
+.env
+
+# operating system
+.DS_Store
+Thumbs.db

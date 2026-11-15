@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Tutorial: check progress",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": ["tools/check_progress.py"],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Tutorial: progress page",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": ["tools/check_progress.py", "--serve"],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}
