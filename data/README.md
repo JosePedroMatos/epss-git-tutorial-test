@@ -9,3 +9,4 @@ Made up for this exercise; not measurements.
 | `tmin_c` | minimum temperature | °C |
 | `tmax_c` | maximum temperature | °C |
 | `rain_mm` | rainfall | mm |
+
