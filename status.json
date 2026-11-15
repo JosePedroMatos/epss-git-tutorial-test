@@ -1,0 +1,67 @@
+{
+ "schema": 1,
+ "repo": "JosePedroMatos/epss-git-tutorial-test",
+ "source": "github-actions",
+ "updated": "2026-11-15T10:33:22Z",
+ "done": 3,
+ "total": 8,
+ "checkpoints": [
+  {
+   "id": "repo",
+   "part": 0,
+   "title": "Group repository created from the template",
+   "ok": true,
+   "detail": "github.com/JosePedroMatos/epss-git-tutorial-test"
+  },
+  {
+   "id": "first-push",
+   "part": 1,
+   "title": "Member A's first commit is on GitHub",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "everyone",
+   "part": 1,
+   "title": "All three members have pushed to main",
+   "ok": false,
+   "detail": "waiting for: member B's section, member C's section, commits from 3 people (now 1)"
+  },
+  {
+   "id": "conflict",
+   "part": 1,
+   "title": "Team name agreed after the conflict",
+   "ok": false,
+   "detail": "TEAM.md on GitHub still says (to be decided)"
+  },
+  {
+   "id": "protected",
+   "part": 2,
+   "title": "main is protected: changes arrive by pull request",
+   "ok": true,
+   "detail": "pull request required before merging"
+  },
+  {
+   "id": "prs",
+   "part": 2,
+   "title": "Three pull requests merged, each approved by a teammate",
+   "ok": false,
+   "detail": "none yet (0 of 3 members); #1 merged without a teammate's approval"
+  },
+  {
+   "id": "wired",
+   "part": 2,
+   "title": "Three functions written and used in report.py",
+   "ok": false,
+   "detail": "not on main yet: member A's function, member B's function, member C's function, 3 of the 3 calls in report.py"
+  },
+  {
+   "id": "notebook",
+   "part": 3,
+   "title": "Notebook has both new cells and no outputs",
+   "ok": false,
+   "detail": "no cell on main calls monthly_summary or add_tmean yet"
+  }
+ ],
+ "problems": []
+}
